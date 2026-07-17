@@ -6,4 +6,4 @@ services:
     volumes:
       - ../.container:/mnt/server
     environment:
-      APPID: 730
+      APPID: 740

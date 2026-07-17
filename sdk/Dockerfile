@@ -1,7 +1,7 @@
 FROM registry.gitlab.steamos.cloud/steamrt/sniper/sdk
 LABEL author="BuSheeZy"
 LABEL maintainer="BuSheeZy@BadServers.net"
-LABEL org.opencontainers.image.source="https://github.com/BadServersNet/sniper-cs2-yolk"
+LABEL org.opencontainers.image.source="https://github.com/BadServersNet/sniper-csgo-yolk"
 
 RUN apt install -y iproute2 \
   && adduser --disabled-password --home /home/container container

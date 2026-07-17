@@ -9,7 +9,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository_owner }}/sniper-sdk-cs2-yolk
+  IMAGE_NAME: ${{ github.repository_owner }}/sniper-sdk-csgo-yolk
 
 jobs:
   build:

@@ -5,16 +5,16 @@
     "update_url": null
   },
   "exported_at": "2026-07-17T12:14:10-05:00",
-  "name": "Counter-Strike 2",
+  "name": "Counter-Strike: Global Offensive",
   "author": "busheezy@badservers.net",
   "description": null,
   "features": [],
   "docker_images": {
-    "Platform": "ghcr.io\/badserversnet\/sniper-cs2-yolk:latest",
-    "SDK": "ghcr.io\/badserversnet\/sniper-sdk-cs2-yolk:latest"
+    "Platform": "ghcr.io\/badserversnet\/sniper-csgo-yolk:latest",
+    "SDK": "ghcr.io\/badserversnet\/sniper-sdk-csgo-yolk:latest"
   },
   "file_denylist": [],
-  "startup": ".\/game\/cs2.sh -dedicated +ip 0.0.0.0 -port {{SERVER_PORT}} +map {{MAP}} -maxplayers {{MAXPLAYERS}} +game_type {{GAME_TYPE}} +game_mode {{GAME_MODE}} +sv_game_mode_flags {{GAME_MODE_FLAGS}} +sv_skirmish_id {{SKIRMISH_ID}} +sv_password \"{{PASSWORD}}\" +sv_setsteamaccount \"{{GSLT}}\" -disable_workshop_command_filtering",
+  "startup": ".\/srcds_run -game csgo -console -usercon +ip 0.0.0.0 -port {{SERVER_PORT}} +map {{MAP}} -maxplayers_override {{MAXPLAYERS}} +game_type {{GAME_TYPE}} +game_mode {{GAME_MODE}} +sv_game_mode_flags {{GAME_MODE_FLAGS}} +sv_skirmish_id {{SKIRMISH_ID}} +sv_password \"{{PASSWORD}}\" +sv_setsteamaccount \"{{GSLT}}\"",
   "config": {
     "files": "{}",
     "startup": "{\r\n    \"done\": \"Connection to Steam servers successful\"\r\n}",
@@ -43,7 +43,7 @@
       "name": "App ID",
       "description": "",
       "env_variable": "APPID",
-      "default_value": "730",
+      "default_value": "740",
       "user_viewable": false,
       "user_editable": false,
       "rules": "required|integer",
